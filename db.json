@@ -1,0 +1,79 @@
+{
+    "songs": [
+        {   "id": 1,
+            "title": "Blind Willie McTell",
+            "runtime": 4.26,
+            "artist": "Bob Dylan",
+            "genre": "Classic Rock"
+        },
+        {   "id": 2,
+            "title": "Morning Bell",
+            "runtime": 4.35,
+            "artist": "Radiohead",
+            "genre": "Alternative Rock"
+        },
+        {   "id": 3,
+            "title": "Something in the Way",
+            "runtime": 3.52,
+            "artist": "Nirvana",
+            "genre": ["Alternative Rock", "Grunge"]
+        },
+        {   "id": 4,
+            "title": "Come Together",
+            "runtime": 4.19,
+            "artist": "The Beatles",
+            "genre": "Classic Rock"
+        },
+        {   "id": 1,
+            "title": "I Wanna Dance With Somebody",
+            "runtime": 4.51,
+            "artist": "Whitney Houston",
+            "genre": "Pop"
+        }
+    ],
+
+    "artists": [
+        {
+            "id": 1,
+            "name": "Bob Dylan",
+            "songs": ["Blind Willie McTell", "Blowin' in the Wind", "HUrricane"]
+        },
+        {
+            "id": 2,
+            "name": "The Beatles",
+            "songs": ["Come Together", "Yesterday", "Here Comes the Sun"]
+        },
+        {
+            "id": 3,
+            "name": "Radiohead",
+            "songs": ["Morning Bell", "Just", "The Tourist"]
+        },
+        {
+            "id": 4,
+            "name": "Nirvana",
+            "songs": [
+            "Something in the Way",
+            "Heart-Shaped Box",
+            "Smells Like Teen Spirit"
+            ]
+        }
+      ],
+
+    "genres": [
+        {
+            "id": 1,
+            "name": "Classic Rock",
+            "songs": ["Blind Willie McTell", "Come Together", "Here Comes the Sun"]
+        },
+        {
+            "id": 2,
+            "name": "Pop",
+            "songs": ["I Wanna Dance With Somebody", "Here Comes the Sun", "Style"]
+        },
+        {
+            "id": 3,
+            "name": "Alternative Rock",
+            "songs": ["Morning Bell", "Something in the Way", "Smells Like Teen Spirit"]
+        }
+    ]
+}
