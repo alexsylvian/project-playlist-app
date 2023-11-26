@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import NavBar from './components/NavBar';
 
 let track = 0
 
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <NavBar />
         <button onClick={handleNextTrack}>NEXT</button>
         <h1>{song}</h1>
         <p>{artist}</p>
