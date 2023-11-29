@@ -16,7 +16,7 @@
             "title": "Something in the Way",
             "runtime": 3.52,
             "artist": "Nirvana",
-            "genre": ["Alternative Rock", "Grunge"]
+            "genre": ["Alternative Rock"]
         },
         {   "id": 4,
             "title": "Come Together",
@@ -36,7 +36,7 @@
         {
             "id": 1,
             "name": "Bob Dylan",
-            "songs": ["Blind Willie McTell", "Blowin' in the Wind", "HUrricane"]
+            "songs": ["Blind Willie McTell", "Blowin' in the Wind", "Hurricane"]
         },
         {
             "id": 2,

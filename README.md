@@ -1,5 +1,3 @@
 ## React App
 
-TEST t
-
-x
+TEST
