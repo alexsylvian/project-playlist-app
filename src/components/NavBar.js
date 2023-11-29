@@ -14,7 +14,7 @@ function NavBar() {
         to="/artists"
         className="navbar"
       >
-        Actors
+        Artists
       </NavLink>
       <NavLink
         to="/genres"
