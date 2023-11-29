@@ -6,15 +6,15 @@ function Home() {
   const [songs, setSongs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/songs")
+    fetch("http://localhost:4001/songs")
       .then((r) => r.json())
       .then((data) => setSongs(data))
       .catch((error) => console.error(error));
   }, []);
 
-//   const songList = songs.map((song) => (
-//     <SongCard key={song.id} title={song.title} id={song.id} />
-//   ));
+  const songList = songs.map((song) => (
+    <SongCard key={song.id} title={song.title} id={song.id} />
+  ));
 
   return (
     <>
@@ -23,7 +23,7 @@ function Home() {
       </header>
       <main>
         <h1>Home Page</h1>
-        {/* {songList} */}
+        {songList}
       </main>
     </>
   );
