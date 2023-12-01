@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import Artists from "./pages/Artists";
 import Genres from "./pages/Genres";
 import Song from "./pages/Song";
+import AddNewSong from "./pages/AddNewSong";
 
 const routes = [
     {
@@ -17,6 +18,11 @@ const routes = [
     {
       path: "/genres",
       element: <Genres />,
+    //   errorElement: <ErrorPage />
+    },
+    {
+      path: "/submit-song",
+      element: <AddNewSong />
     //   errorElement: <ErrorPage />
     },
     {
