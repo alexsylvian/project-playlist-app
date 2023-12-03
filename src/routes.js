@@ -8,27 +8,22 @@ const routes = [
     {
       path: "/",
       element: <Home />,
-    //   errorElement: <ErrorPage />
+      errorElement: <ErrorPage />
     },
     {
       path: "/artists",
       element: <Artists />,
-    //   errorElement: <ErrorPage />
+      errorElement: <ErrorPage />
     },
     {
       path: "/genres",
       element: <Genres />,
-    //   errorElement: <ErrorPage />
-    },
-    {
-      path: "/submit-song",
-      element: <AddNewSong />
-    //   errorElement: <ErrorPage />
+      errorElement: <ErrorPage />
     },
     {
       path: "/song/:id",
       element: <Song />,
-      // errorElement: <ErrorPage />
+      errorElement: <ErrorPage />
     }
 ]
 
