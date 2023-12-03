@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import Artists from "./pages/Artists";
 import Genres from "./pages/Genres";
 import Song from "./pages/Song";
-import AddNewSong from "./pages/AddNewSong";
+import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
     {
