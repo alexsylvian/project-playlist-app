@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
 
 function AddNewSong({ onAddSong }) {
     const [songTitle, setSongTitle] = useState("");
@@ -38,9 +37,6 @@ function AddNewSong({ onAddSong }) {
 
     return (
         <>
-          <header>
-            <NavBar />
-          </header>
           <main>
             <h1>Add New Song</h1>
             <form onSubmit={handleSubmit}>
