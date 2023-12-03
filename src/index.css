@@ -9,6 +9,7 @@ article {
   max-width: 350px;
   box-sizing: border-box;
   padding: 5px;
+  background-color: pink;
 
   position: relative;
   top: 50%;
@@ -30,6 +31,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: pink;
 }
 
 label {
@@ -70,3 +72,6 @@ input[type="submit"]:hover {
   margin-top: 80px;
 }
 
+body {
+  background-color:rgb(212, 107, 107)
+}
