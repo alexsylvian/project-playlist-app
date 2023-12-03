@@ -21,9 +21,11 @@ function Song() {
       </header>
       <main>
         <h1>{song.title}</h1>
-        <p>Runtime: {song.runtime}</p>
-        <p>Artist: {song.artist}</p>
-        <p>Genre: {song.genre}</p>
+        <article className="double-space">
+          <p>Runtime: {song.runtime}</p>
+          <p>Artist: {song.artist}</p>
+          <p>Genre: {song.genre}</p>
+        </article>
       </main>
     </>
   );
