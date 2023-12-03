@@ -29,7 +29,9 @@ function Home() {
       </header>
       <main>
         <h1>Home Page</h1>
-        {songList}
+        <div className="space">
+          {songList}
+        </div>
         <AddNewSong onAddSong={handleAddSong} />
       </main>
     </>

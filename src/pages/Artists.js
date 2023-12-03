@@ -18,7 +18,7 @@ function Artists() {
       <h2>{artist.name}</h2>
       <ul>
       {artist.songs.map(song => (
-        <li>{song}</li>
+        <li key={song.id}>{song}</li>
       ))}
     </ul>
     </article>
