@@ -9,4 +9,11 @@ article {
   max-width: 350px;
   box-sizing: border-box;
   padding: 5px;
+
+  /* Center the article horizontally and vertically */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+

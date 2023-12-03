@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SongCard from "../components/SongCard";
 import NavBar from "../components/NavBar";
 import AddNewSong from "./AddNewSong";
+import "./Home.css"
 
 function Home() {
   const [songs, setSongs] = useState([]);
@@ -27,7 +28,7 @@ function Home() {
         <NavBar />
       </header>
       <main>
-        <h1>Home Page</h1>
+        <h1 className="heading">Home Page</h1>
         {songList}
         <AddNewSong onAddSong={handleAddSong} />
       </main>

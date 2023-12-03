@@ -22,12 +22,12 @@ function NavBar() {
       >
         Genres
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/submit-song"
         className="navbar"
       >
         Add New Song
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 };
