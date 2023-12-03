@@ -18,12 +18,22 @@ function AddNewSong({ onAddSong }) {
             genre: genre
         }
 
+        fetch("http://localhost:4001/songs", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newSongObject),
+      })
+      .then(res => res.json())
+      .then(() => {
         onAddSong(newSongObject)
 
         setSongTitle("");
         setRuntime("");
         setArtist("");
         setGenre("");
+      })
     }
 
     return (
