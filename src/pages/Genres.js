@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import NavBar from "../components/NavBar";
 
 function Genres() {
@@ -18,7 +19,7 @@ function Genres() {
         <h2>{genre.name}</h2>
         <ul>
         {genre.songs.map(song => (
-          <li key={Date.now()}>{song}</li>
+          <li key={uuidv4()}>{song}</li>
         ))}
       </ul>
       </article>

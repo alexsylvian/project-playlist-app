@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import NavBar from "../components/NavBar";
 
 function Artists() {
@@ -18,7 +19,7 @@ function Artists() {
       <h2>{artist.name}</h2>
       <ul>
       {artist.songs.map(song => (
-        <li key={Date.now()}>{song}</li>
+        <li key={uuidv4()}>{song}</li>
       ))}
     </ul>
     </article>
