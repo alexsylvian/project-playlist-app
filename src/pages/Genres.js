@@ -18,7 +18,7 @@ function Genres() {
         <h2>{genre.name}</h2>
         <ul>
         {genre.songs.map(song => (
-          <li>{song}</li>
+          <li key={Date.now()}>{song}</li>
         ))}
       </ul>
       </article>
@@ -31,7 +31,9 @@ function Genres() {
             </header>
             <main>
                 <h1>Genres Page</h1>
-                {genreList}
+                <div className="double-space">
+                  {genreList}
+                </div>
             </main>
         </>
     )

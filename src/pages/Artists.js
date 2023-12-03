@@ -18,7 +18,7 @@ function Artists() {
       <h2>{artist.name}</h2>
       <ul>
       {artist.songs.map(song => (
-        <li key={song.id}>{song}</li>
+        <li key={Date.now()}>{song}</li>
       ))}
     </ul>
     </article>
@@ -31,7 +31,9 @@ function Artists() {
       </header>
       <main>
         <h1>Artists Page</h1>
-        {artistList}
+        <div className="double-space">
+          {artistList}
+        </div>
       </main>
     </>
   );
