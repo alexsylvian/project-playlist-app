@@ -52,7 +52,7 @@ function AddNewSong({ onAddSong }) {
               <label>
                 Runtime:
                 <input
-                  type="number"
+                  type="text"
                   value={runtime}
                   onChange={(e) => setRuntime(e.target.value)}
                 />

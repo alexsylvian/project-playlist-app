@@ -28,7 +28,7 @@ function Home() {
         <NavBar />
       </header>
       <main>
-        <h1 className="heading">Home Page</h1>
+        <h1>Home Page</h1>
         {songList}
         <AddNewSong onAddSong={handleAddSong} />
       </main>
