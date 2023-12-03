@@ -8,7 +8,7 @@ To use, clone the github package and cd into the file, and run 'npm start' in th
 
 ## Usage
 
-To use Pick Your Playlist, simply submit the song you would like to add into the submittal form, along with artist, runtime, and genre, which will automatically add it into the playlist. Songs that are already on the playlist will shown 
+To use Pick Your Playlist, simply submit the song you would like to add into the submittal form, along with artist, runtime, and genre, which will automatically add it into the playlist. Songs that are already on the playlist will shown on startup. You can click on each individual song to see additional information like artist and runtime. You can also switch pages to see the artists' other songs or other examples of the genres.
 
 ## Contributing
 
