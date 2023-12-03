@@ -23,7 +23,7 @@ function NavBar() {
         Genres
       </NavLink>
       <NavLink
-        to="/addNewSong"
+        to="/submit-song"
         className="navbar"
       >
         Add New Song
