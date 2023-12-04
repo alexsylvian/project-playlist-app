@@ -25,15 +25,15 @@ function AddNewSong({ onAddSong }) {
           body: JSON.stringify(newSongObject),
       })
       .then(res => res.json())
-      .then(() => {
-        onAddSong(newSongObject)
+      .then(resData => { // NOTE: this is where you would define a parameter to accept the response from the POST request
+        onAddSong(resData)
 
         setSongTitle("");
         setRuntime("");
         setArtist("");
         setGenre("");
       })
-    }
+    } 
 
     return (
         <>
