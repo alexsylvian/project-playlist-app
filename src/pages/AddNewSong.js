@@ -10,7 +10,6 @@ function AddNewSong({ onAddSong }) {
         e.preventDefault()
 
         const newSongObject = {
-            id: Date.now(),
             title: songTitle,
             runtime: runtime,
             artist: artist,
@@ -25,7 +24,7 @@ function AddNewSong({ onAddSong }) {
           body: JSON.stringify(newSongObject),
       })
       .then(res => res.json())
-      .then(resData => { // NOTE: this is where you would define a parameter to accept the response from the POST request
+      .then(resData => {
         onAddSong(resData)
 
         setSongTitle("");
