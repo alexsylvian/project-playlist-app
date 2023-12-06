@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
     fetch("http://localhost:4001/songs")
-      .then((r) => r.json())
+      .then((res) => res.json())
       .then((data) => setSongs(data))
       .catch((error) => console.error(error));
   }, []);
