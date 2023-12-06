@@ -9,6 +9,11 @@ function AddNewSong({ onAddSong }) {
     function handleSubmit(e) {
         e.preventDefault()
 
+        if (!songTitle || !runtime || !artist || !genre) {
+          alert("Please fill in all fields.");
+          return;
+        }
+
         const newSongObject = {
             title: songTitle,
             runtime: runtime,
