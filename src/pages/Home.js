@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SongCard from "../components/SongCard";
 import NavBar from "../components/NavBar";
-import AddNewSong from "./AddNewSong";
+import AddNewSong from "../components/AddNewSong";
 
 function Home() {
   const [songs, setSongs] = useState([]);
