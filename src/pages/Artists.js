@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import NavBar from "../components/NavBar";
+import TestForm from "../components/TestForm";
 
 function Artists() {
   const [artists, setArtists] = useState([])
@@ -32,6 +33,7 @@ function Artists() {
       </header>
       <main>
         <h1>Artists Page</h1>
+        <TestForm />
         <div className="double-space">
           {artistList}
         </div>
