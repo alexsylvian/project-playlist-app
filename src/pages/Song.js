@@ -7,9 +7,9 @@ function Song() {
   const params = useParams();
   const songId = params.id;
 
-  useEffect(() =>{
+  useEffect(() => {
     fetch(`http://localhost:4001/songs/${songId}`)
-    .then(r => r.json())
+    .then(res => res.json())
     .then(data => setSong(data))
     .catch(error => console.error(error));
   }, [songId]);

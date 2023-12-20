@@ -5,7 +5,6 @@ function SongCard({ title, id }){
         <article>
             <h2>{title}</h2>
             <Link to={`/song/${id}`}>View Song Info</Link>
-            {/* might add images later */}
         </article>
     )
 }

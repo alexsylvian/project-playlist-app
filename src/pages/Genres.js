@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import NavBar from "../components/NavBar";
 
+
 function Genres() {
     const [genres, setGenres] = useState([])
 
@@ -12,18 +13,16 @@ function Genres() {
         .catch(error => console.error(error))
     }, [])
   
-    const genreList = genres.map(genre =>{
-      return <article
-      key={genre.id}
-      >
+    const genreList = genres.map(genre => (
+      <article key={genre.id}>
         <h2>{genre.name}</h2>
         <ul>
-        {genre.songs.map(song => (
-          <li key={uuidv4()}>{song}</li>
-        ))}
-      </ul>
+          {genre.songs.map(song => (
+            <li key={uuidv4()}>{song}</li>
+          ))}
+        </ul>
       </article>
-    });
+    ))
 
     return(
         <>
@@ -40,4 +39,4 @@ function Genres() {
     )
 }
 
-export default Genres
+export default Genres;
